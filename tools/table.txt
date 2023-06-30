@@ -1,0 +1,161 @@
+\begin{tabular}{cl l l l l}
+\hline
+\multicolumn{2}{c}{ }&
+\multicolumn{1}{c}{Bias (Ours)} &  \multicolumn{1}{c}{Bias (RPNN)} & \multicolumn{1}{c}{Speed Up (vs RPNN)}&
+\multicolumn{1}{c}{Speed Up (vs Ref)}\\
+\cline{3-6}
+Model&
+Light Dir.
+&Dir. illum & Dir. illum & Dir. illum & Dir. illum \\
+\hline
+\multirow{3}{*}{Cloud0}&Side& \cellcolor{red!20} {MRPNN.CLOUD0.0.857.(1,1,1).side}e-2 & \cellcolor{red!40} {RPNN.CLOUD0.0.857.(1,1,1).side}e-2 & \cellcolor{green!20} 114.9 & \cellcolor{green!40}1812.5\\
+&Front& {MRPNN.CLOUD0.0.857.(1,1,1).front}e-2 & {RPNN.CLOUD0.0.857.(1,1,1).front}e-2 & 114.9 & 1,812.5\\
+&Back& {MRPNN.CLOUD0.0.857.(1,1,1).back}e-2 & {RPNN.CLOUD0.0.857.(1,1,1).back}e-2 & 114.9 & 1,562.5\\
+\hline
+\multirow{3}{*}{Cloud1}&Side& {MRPNN.CLOUD1.0.857.(1,1,1).side}e-2 & {RPNN.CLOUD1.0.857.(1,1,1).side}e-2 & 116.8 & 2,687.5\\
+&Front& {MRPNN.CLOUD1.0.857.(1,1,1).front}e-2 & {RPNN.CLOUD1.0.857.(1,1,1).front}e-2 & 116.8 & 2,203.1\\
+&Back& {MRPNN.CLOUD1.0.857.(1,1,1).back}e-2 & {RPNN.CLOUD1.0.857.(1,1,1).back}e-2 & 116.8 & 2,937.5\\
+\hline
+\multirow{3}{*}{Cloud2}&Side& {MRPNN.CLOUD2.0.857.(1,1,1).side}e-2 & {RPNN.CLOUD2.0.857.(1,1,1).side}e-2 & 125.0 & 729.2\\
+&Front& {MRPNN.CLOUD2.0.857.(1,1,1).front}e-2 & {RPNN.CLOUD2.0.857.(1,1,1).front}e-2 & 125.0 & 677.1\\
+&Back& {MRPNN.CLOUD2.0.857.(1,1,1).back}e-2 & {RPNN.CLOUD2.0.857.(1,1,1).back}e-2 & 125.0 & 390.6\\
+\hline
+\multirow{3}{*}{Cloud3}&Side& {MRPNN.CLOUD3.0.857.(1,1,1).side}e-2 & {RPNN.CLOUD3.0.857.(1,1,1).side}e-2 & 109.5 & 2,812.5\\
+&Front& {MRPNN.CLOUD3.0.857.(1,1,1).front}e-2 & {RPNN.CLOUD3.0.857.(1,1,1).front}e-2 & 109.5 & 2,625.0\\
+&Back& {MRPNN.CLOUD3.0.857.(1,1,1).back}e-2 & {RPNN.CLOUD3.0.857.(1,1,1).back}e-2 & 109.5 & 2,343.8\\
+\hline
+\multirow{3}{*}{Cloud4}&Side& {MRPNN.CLOUD4.0.857.(1,1,1).side}e-2 & {RPNN.CLOUD4.0.857.(1,1,1).side}e-2 & 97.6 & 1,078.1\\
+&Front& {MRPNN.CLOUD4.0.857.(1,1,1).front}e-2 & {RPNN.CLOUD4.0.857.(1,1,1).front}e-2 & 97.6 & 984.4\\
+&Back& {MRPNN.CLOUD4.0.857.(1,1,1).back}e-2 & {RPNN.CLOUD4.0.857.(1,1,1).back}e-2 & 97.6 & 1,050.0\\
+\hline
+\multirow{3}{*}{Model0}&Side& {MRPNN.MODEL0.0.857.(1,1,1).side}e-2 & {RPNN.MODEL0.0.857.(1,1,1).side}e-2 & 89.4 & 837.5\\
+&Front& {MRPNN.MODEL0.0.857.(1,1,1).front}e-2 & {RPNN.MODEL0.0.857.(1,1,1).front}e-2 & 89.4 & 628.1\\
+&Back& {MRPNN.MODEL0.0.857.(1,1,1).back}e-2 & {RPNN.MODEL0.0.857.(1,1,1).back}e-2 & 89.4 & 487.5\\
+\hline
+\multirow{3}{*}{Model1}&Side& {MRPNN.MODEL1.0.857.(1,1,1).side}e-2 & {RPNN.MODEL1.0.857.(1,1,1).side}e-2 & 85.7 & 421.9\\
+&Front& {MRPNN.MODEL1.0.857.(1,1,1).front}e-2 & {RPNN.MODEL1.0.857.(1,1,1).front}e-2 & 85.7 & 375.0\\
+&Back& {MRPNN.MODEL1.0.857.(1,1,1).back}e-2 & {RPNN.MODEL1.0.857.(1,1,1).back}e-2 & 85.7 & 350.0\\
+\hline
+\multirow{3}{*}{Model2}&Side& {MRPNN.MODEL2.0.857.(1,1,1).side}e-2 & {RPNN.MODEL2.0.857.(1,1,1).side}e-2 & 118.2 & 386.4\\
+&Front& {MRPNN.MODEL2.0.857.(1,1,1).front}e-2 & {RPNN.MODEL2.0.857.(1,1,1).front}e-2 & 118.2 & 340.9\\
+&Back& {MRPNN.MODEL2.0.857.(1,1,1).back}e-2 & {RPNN.MODEL2.0.857.(1,1,1).back}e-2 &  118.2 & 306.8\\
+\end{tabular}
+
+
+
+
+
+\begin{tabular}{cl l l l l l l}
+\hline
+\multicolumn{2}{c}{ RMSE$\times$100 }&
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{RPNN} &
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{RPNN} &
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{RPNN}\\
+\cline{3-4} \cline{5-6} \cline{7-8}
+Model&
+\multicolumn{1}{c}{$G$}
+&Side & Side &Front & Front &Back & Back \\
+\hline
+\multirow{3}{*}{Cloud0}&$G$=0.857& \cellcolor{green!20} {MRPNN.CLOUD0.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.CLOUD0.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.CLOUD0.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.CLOUD0.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.CLOUD0.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.CLOUD0.0.857.(1,1,1).front}\\
+&$G$=0.5&\cellcolor{green!30} {MRPNN.CLOUD0.0.5.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD0.0.5.(1,1,1).front} & \cellcolor{red!40} n/a &\cellcolor{green!30} {MRPNN.CLOUD0.0.5.(1,1,1).back} & \cellcolor{red!40} n/a\\
+&$G$=0.0&\cellcolor{green!40} {MRPNN.CLOUD0.0.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD0.0.(1,1,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD0.0.(1,1,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Cloud1}&$G$=0.857& \cellcolor{green!20} {MRPNN.CLOUD1.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.CLOUD1.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.CLOUD1.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.CLOUD1.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.CLOUD1.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.CLOUD1.0.857.(1,1,1).front}\\
+&$G$=0.5&\cellcolor{green!30} {MRPNN.CLOUD1.0.5.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD1.0.5.(1,1,1).front} & \cellcolor{red!40} n/a &\cellcolor{green!30} {MRPNN.CLOUD1.0.5.(1,1,1).back} & \cellcolor{red!40} n/a\\
+&$G$=0.0&\cellcolor{green!40} {MRPNN.CLOUD1.0.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD1.0.(1,1,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD1.0.(1,1,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Cloud2}&$G$=0.857& \cellcolor{green!20} {MRPNN.CLOUD2.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.CLOUD2.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.CLOUD2.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.CLOUD2.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.CLOUD2.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.CLOUD2.0.857.(1,1,1).front}\\
+&$G$=0.5&\cellcolor{green!30} {MRPNN.CLOUD2.0.5.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD2.0.5.(1,1,1).front} & \cellcolor{red!40} n/a &\cellcolor{green!30} {MRPNN.CLOUD2.0.5.(1,1,1).back} & \cellcolor{red!40} n/a\\
+&$G$=0.0&\cellcolor{green!40} {MRPNN.CLOUD2.0.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD2.0.(1,1,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD2.0.(1,1,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Model0}&$G$=0.857& \cellcolor{green!20} {MRPNN.MODEL0.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.MODEL0.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.MODEL0.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.MODEL0.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.MODEL0.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.MODEL0.0.857.(1,1,1).front}\\
+&$G$=0.5&\cellcolor{green!30} {MRPNN.MODEL0.0.5.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.MODEL0.0.5.(1,1,1).front} & \cellcolor{red!40} n/a &\cellcolor{green!30} {MRPNN.MODEL0.0.5.(1,1,1).back} & \cellcolor{red!40} n/a\\
+&$G$=0.0&\cellcolor{green!40} {MRPNN.MODEL0.0.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL0.0.(1,1,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL0.0.(1,1,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Model1}&$G$=0.857& \cellcolor{green!20} {MRPNN.MODEL1.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.MODEL1.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.MODEL1.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.MODEL1.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.MODEL1.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.MODEL1.0.857.(1,1,1).front}\\
+&$G$=0.5&\cellcolor{green!30} {MRPNN.MODEL1.0.5.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.MODEL1.0.5.(1,1,1).front} & \cellcolor{red!40} n/a &\cellcolor{green!30} {MRPNN.MODEL1.0.5.(1,1,1).back} & \cellcolor{red!40} n/a\\
+&$G$=0.0&\cellcolor{green!40} {MRPNN.MODEL1.0.(1,1,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL1.0.(1,1,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL1.0.(1,1,1).back} & \cellcolor{red!40} n/a\\
+\end{tabular}
+
+
+
+
+
+\begin{tabular}{cl l l l l l l}
+\hline
+\multicolumn{2}{c}{ RMSE$\times$100 }&
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{RPNN} &
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{RPNN} &
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{RPNN}\\
+\cline{3-4} \cline{5-6} \cline{7-8}
+Model&
+\multicolumn{1}{c}{$\boldsymbol{\sigma}$}
+&Side & Side &Front & Front &Back & Back \\
+\hline
+\multirow{3}{*}{Cloud0}&$\boldsymbol{\sigma}=\{1.0,1.0,1.0\}$& \cellcolor{green!20} {MRPNN.CLOUD0.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.CLOUD0.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.CLOUD0.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.CLOUD0.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.CLOUD0.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.CLOUD0.0.857.(1,1,1).back} \\
+&$\boldsymbol{\sigma}=\{0.96,0.98,1.0\}$&\cellcolor{green!30} {MRPNN.CLOUD0.0.857.(0.96,0.98,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD0.0.857.(0.96,0.98,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD0.0.857.(0.96,0.98,1).back} & \cellcolor{red!40} n/a\\
+&$\boldsymbol{\sigma}=\{0.8,0.9,1.0\}$&\cellcolor{green!40} {MRPNN.CLOUD0.0.857.(0.8,0.9,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD0.0.857.(0.8,0.9,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD0.0.857.(0.8,0.9,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Cloud1}&$\boldsymbol{\sigma}=\{1.0,1.0,1.0\}$& \cellcolor{green!20} {MRPNN.CLOUD1.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.CLOUD1.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.CLOUD1.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.CLOUD1.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.CLOUD1.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.CLOUD1.0.857.(1,1,1).back} \\
+&$\boldsymbol{\sigma}=\{0.96,0.98,1.0\}$&\cellcolor{green!30} {MRPNN.CLOUD1.0.857.(0.96,0.98,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD1.0.857.(0.96,0.98,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD1.0.857.(0.96,0.98,1).back} & \cellcolor{red!40} n/a\\
+&$\boldsymbol{\sigma}=\{0.8,0.9,1.0\}$&\cellcolor{green!40} {MRPNN.CLOUD1.0.857.(0.8,0.9,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD1.0.857.(0.8,0.9,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD1.0.857.(0.8,0.9,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Cloud2}&$\boldsymbol{\sigma}=\{1.0,1.0,1.0\}$& \cellcolor{green!20} {MRPNN.CLOUD2.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.CLOUD2.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.CLOUD2.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.CLOUD2.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.CLOUD2.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.CLOUD2.0.857.(1,1,1).back} \\
+&$\boldsymbol{\sigma}=\{0.96,0.98,1.0\}$&\cellcolor{green!30} {MRPNN.CLOUD2.0.857.(0.96,0.98,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD2.0.857.(0.96,0.98,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.CLOUD2.0.857.(0.96,0.98,1).back} & \cellcolor{red!40} n/a\\
+&$\boldsymbol{\sigma}=\{0.8,0.9,1.0\}$&\cellcolor{green!40} {MRPNN.CLOUD2.0.857.(0.8,0.9,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD2.0.857.(0.8,0.9,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.CLOUD2.0.857.(0.8,0.9,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Model0}&$\boldsymbol{\sigma}=\{1.0,1.0,1.0\}$& \cellcolor{green!20} {MRPNN.MODEL0.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.MODEL0.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.MODEL0.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.MODEL0.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.MODEL0.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.MODEL0.0.857.(1,1,1).back} \\
+&$\boldsymbol{\sigma}=\{0.96,0.98,1.0\}$&\cellcolor{green!30} {MRPNN.MODEL0.0.857.(0.96,0.98,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.MODEL0.0.857.(0.96,0.98,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.MODEL0.0.857.(0.96,0.98,1).back} & \cellcolor{red!40} n/a\\
+&$\boldsymbol{\sigma}=\{0.8,0.9,1.0\}$&\cellcolor{green!40} {MRPNN.MODEL0.0.857.(0.8,0.9,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL0.0.857.(0.8,0.9,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL0.0.857.(0.8,0.9,1).back} & \cellcolor{red!40} n/a\\
+\hline
+\multirow{3}{*}{Model1}&$\boldsymbol{\sigma}=\{1.0,1.0,1.0\}$& \cellcolor{green!20} {MRPNN.MODEL1.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.MODEL1.0.857.(1,1,1).side} & \cellcolor{green!20} {MRPNN.MODEL1.0.857.(1,1,1).front} & \cellcolor{green!40} {RPNN.MODEL1.0.857.(1,1,1).front} & \cellcolor{green!20} {MRPNN.MODEL1.0.857.(1,1,1).back} & \cellcolor{green!40} {RPNN.MODEL1.0.857.(1,1,1).back} \\
+&$\boldsymbol{\sigma}=\{0.96,0.98,1.0\}$&\cellcolor{green!30} {MRPNN.MODEL1.0.857.(0.96,0.98,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.MODEL1.0.857.(0.96,0.98,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!30} {MRPNN.MODEL1.0.857.(0.96,0.98,1).back} & \cellcolor{red!40} n/a\\
+&$\boldsymbol{\sigma}=\{0.8,0.9,1.0\}$&\cellcolor{green!40} {MRPNN.MODEL1.0.857.(0.8,0.9,1).side} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL1.0.857.(0.8,0.9,1).front} & \cellcolor{red!40} n/a&\cellcolor{green!40} {MRPNN.MODEL1.0.857.(0.8,0.9,1).back} & \cellcolor{red!40} n/a\\
+\end{tabular}
+
+
+
+
+
+\begin{tabular}{cl l l l l}
+\hline
+\multicolumn{2}{c}{ RMSE$\times$100 }&
+\multicolumn{1}{c}{Ours} &  \multicolumn{1}{c}{Ours(Zero shot)} & \multicolumn{1}{c}{RPNN}&
+\multicolumn{1}{c}{RPNN(Zero shot)}\\
+\cline{3-6}
+Model&
+Light Dir.
+&Dir. illum & Dir. illum & Dir. illum & Dir. illum \\
+\hline
+\multirow{3}{*}{Cloud0}&Side& \cellcolor{red!20} {MRPNN.CLOUD0.0.857.(1,1,1).side} & \cellcolor{red!40} {MRPNN.zs.CLOUD0.0.857.(1,1,1).side} & \cellcolor{green!20} {RPNN.CLOUD0.0.857.(1,1,1).side} & \cellcolor{green!40} {RPNN.zs.CLOUD0.0.857.(1,1,1).side}\\
+&Front& {MRPNN.CLOUD0.0.857.(1,1,1).front} & {MRPNN.zs.CLOUD0.0.857.(1,1,1).front} & {RPNN.CLOUD0.0.857.(1,1,1).front} & {RPNN.zs.CLOUD0.0.857.(1,1,1).front}\\
+&Back& {MRPNN.CLOUD0.0.857.(1,1,1).back} & {MRPNN.zs.CLOUD0.0.857.(1,1,1).back} & {RPNN.CLOUD0.0.857.(1,1,1).back} & {RPNN.zs.CLOUD0.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Cloud1}&Side& {MRPNN.CLOUD1.0.857.(1,1,1).side} & {MRPNN.zs.CLOUD1.0.857.(1,1,1).side} & {RPNN.CLOUD1.0.857.(1,1,1).side} & {RPNN.zs.CLOUD1.0.857.(1,1,1).side}\\
+&Front& {MRPNN.CLOUD1.0.857.(1,1,1).front} & {MRPNN.zs.CLOUD1.0.857.(1,1,1).front} & {RPNN.CLOUD1.0.857.(1,1,1).front} & {RPNN.zs.CLOUD1.0.857.(1,1,1).front}\\
+&Back& {MRPNN.CLOUD1.0.857.(1,1,1).back} & {MRPNN.zs.CLOUD1.0.857.(1,1,1).back} & {RPNN.CLOUD1.0.857.(1,1,1).back} & {RPNN.zs.CLOUD1.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Cloud2}&Side& {MRPNN.CLOUD2.0.857.(1,1,1).side} & {MRPNN.zs.CLOUD2.0.857.(1,1,1).side} & {RPNN.CLOUD2.0.857.(1,1,1).side} & {RPNN.zs.CLOUD2.0.857.(1,1,1).side}\\
+&Front& {MRPNN.CLOUD2.0.857.(1,1,1).front} & {MRPNN.zs.CLOUD2.0.857.(1,1,1).front} & {RPNN.CLOUD2.0.857.(1,1,1).front} & {RPNN.zs.CLOUD2.0.857.(1,1,1).front}\\
+&Back& {MRPNN.CLOUD2.0.857.(1,1,1).back} & {MRPNN.zs.CLOUD2.0.857.(1,1,1).back} & {RPNN.CLOUD2.0.857.(1,1,1).back} & {RPNN.zs.CLOUD2.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Cloud3}&Side& {MRPNN.CLOUD3.0.857.(1,1,1).side} & {MRPNN.zs.CLOUD3.0.857.(1,1,1).side} & {RPNN.CLOUD3.0.857.(1,1,1).side} & {RPNN.zs.CLOUD3.0.857.(1,1,1).side}\\
+&Front& {MRPNN.CLOUD3.0.857.(1,1,1).front} & {MRPNN.zs.CLOUD3.0.857.(1,1,1).front} & {RPNN.CLOUD3.0.857.(1,1,1).front} & {RPNN.zs.CLOUD3.0.857.(1,1,1).front}\\
+&Back& {MRPNN.CLOUD3.0.857.(1,1,1).back} & {MRPNN.zs.CLOUD3.0.857.(1,1,1).back} & {RPNN.CLOUD3.0.857.(1,1,1).back} & {RPNN.zs.CLOUD3.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Cloud4}&Side& {MRPNN.CLOUD4.0.857.(1,1,1).side} & {MRPNN.zs.CLOUD4.0.857.(1,1,1).side} & {RPNN.CLOUD4.0.857.(1,1,1).side} & {RPNN.zs.CLOUD4.0.857.(1,1,1).side}\\
+&Front& {MRPNN.CLOUD4.0.857.(1,1,1).front} & {MRPNN.zs.CLOUD4.0.857.(1,1,1).front} & {RPNN.CLOUD4.0.857.(1,1,1).front} & {RPNN.zs.CLOUD4.0.857.(1,1,1).front}\\
+&Back& {MRPNN.CLOUD4.0.857.(1,1,1).back} & {MRPNN.zs.CLOUD4.0.857.(1,1,1).back} & {RPNN.CLOUD4.0.857.(1,1,1).back} & {RPNN.zs.CLOUD4.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Model0}&Side& {MRPNN.MODEL0.0.857.(1,1,1).side} & {MRPNN.zs.MODEL0.0.857.(1,1,1).side} & {RPNN.MODEL0.0.857.(1,1,1).side} & {RPNN.zs.MODEL0.0.857.(1,1,1).side}\\
+&Front& {MRPNN.MODEL0.0.857.(1,1,1).front} & {MRPNN.zs.MODEL0.0.857.(1,1,1).front} & {RPNN.MODEL0.0.857.(1,1,1).front} & {RPNN.zs.MODEL0.0.857.(1,1,1).front}\\
+&Back& {MRPNN.MODEL0.0.857.(1,1,1).back} & {MRPNN.zs.MODEL0.0.857.(1,1,1).back} & {RPNN.MODEL0.0.857.(1,1,1).back} & {RPNN.zs.MODEL0.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Model1}&Side& {MRPNN.MODEL1.0.857.(1,1,1).side} & {MRPNN.zs.MODEL1.0.857.(1,1,1).side} & {RPNN.MODEL1.0.857.(1,1,1).side} & {RPNN.zs.MODEL1.0.857.(1,1,1).side}\\
+&Front& {MRPNN.MODEL1.0.857.(1,1,1).front} & {MRPNN.zs.MODEL1.0.857.(1,1,1).front} & {RPNN.MODEL1.0.857.(1,1,1).front} & {RPNN.zs.MODEL1.0.857.(1,1,1).front}\\
+&Back& {MRPNN.MODEL1.0.857.(1,1,1).back} & {MRPNN.zs.MODEL1.0.857.(1,1,1).back} & {RPNN.MODEL1.0.857.(1,1,1).back} & {RPNN.zs.MODEL1.0.857.(1,1,1).back}\\
+\hline
+\multirow{3}{*}{Model2}&Side& {MRPNN.MODEL2.0.857.(1,1,1).side} &{MRPNN.zs.MODEL2.0.857.(1,1,1).side} & {RPNN.MODEL2.0.857.(1,1,1).side} & {RPNN.zs.MODEL2.0.857.(1,1,1).side}\\
+&Front& {MRPNN.MODEL2.0.857.(1,1,1).front} & {MRPNN.zs.MODEL2.0.857.(1,1,1).front} & {RPNN.MODEL2.0.857.(1,1,1).front} & {RPNN.zs.MODEL2.0.857.(1,1,1).front}\\
+&Back& {MRPNN.MODEL2.0.857.(1,1,1).back} & {MRPNN.zs.MODEL2.0.857.(1,1,1).back} & {RPNN.MODEL2.0.857.(1,1,1).back} & {RPNN.zs.MODEL2.0.857.(1,1,1).back}\\
+\end{tabular}
