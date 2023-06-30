@@ -1,11 +1,11 @@
 
 
-# MRPNN - A neural Volumetric Renderer
+# MRPNN - A neural volumetric renderer
 
 ![teaser](./pics/teaser.png)
 
 ## About
-MRPNN is a neural volumetric renderer that can render high order volumetric scattering in real-time. See our paper for more details.
+MRPNN is a neural volumetric renderer that can render high-order volumetric scattering in real time. See our paper for more details.
 [SIG23: Deep Real-time Volumetric Rendering Using Multi-feature Fusion](https://sites.cs.ucsb.edu/~lingqi/publications/paper_mrpnn.pdf)
 
 ![Renderer](./pics/cloud.gif)
@@ -24,27 +24,27 @@ MRPNN is a neural volumetric renderer that can render high order volumetric scat
 	|11.8|No|Meet strange behavior|
 - Glfw3 and GLEW if you want to compile with GUI
 - x64 Ubuntu or Windows
-- Nvidia GPU that support sm_75 or sm_86
+- Nvidia GPU that supports sm_75 or sm_86
 
-**If the render result is strange and incorrect, try to use CUDA 11.0 and disable `RTX30XX` option no matter what card you are using. If you know why this happened, please help us fix it!**
-Test with Geforce RTX2000 series, RTX3000 series, Quadro A5000 GPU.
+**If the render result is strange and incorrect, try to use CUDA 11.0 and disable the `RTX30XX` option no matter what card you are using. If you know why this happened, please help us fix it!**
+Test with Geforce RTX2000 series, RTX3000 series, and Quadro A5000 GPU.
 
 ### To build on Linux:
 - Install CUDA 11.x.
 - Unzip 'tools/curand include.rar' into your cuda include directory.
-- Run CMake to generate project, use `-T cuda=<PATH/TO/CUDA/toolkit>` to select cuda version.
-- If you are using RTX30 series, enable the `RTX30XX` option.
-- Enable `RPNN` option if you want to compare with it.
+- Run CMake to generate the project, and use `-T cuda=<PATH/TO/CUDA/toolkit>` to select a cuda version.
+- If you are using the RTX3000 series (or another sm_86 card), enable the `RTX30XX` option.
+- Enable the `RPNN` option if you want to compare with it.
 - Compile your project, it may stuck for a while.
-- Linux currently don't support build with GUI.
+- Linux currently doesn't support build with GUI.
 
 ### To build on Windows:
 - Install CUDA 11.x.
-- Install glew and glfw3 if you need GUI support. (Remember to install x64 version)
-- Run CMake to generate project, use `-T cuda=<PATH/TO/CUDA/toolkit>` to select cuda version.
+- Install glew and glfw3 if you need GUI support. (Remember to install the x64 version)
+- Run CMake to generate the project, and use `-T cuda=<PATH/TO/CUDA/toolkit>` to select a cuda version.
 - If you are using CUDA 11.0~11.3, you may also need to have MSVC v14.25 and using `-T version=14.25`.
-- If you are using RTX30 series, enable the `RTX30XX` option.
-- Enable `RPNN` option if you want to compare with it.
+- If you are using the RTX3000 series, enable the `RTX30XX` option.
+- Enable the `RPNN` option if you want to compare with it.
 - Check the `GUI` option if needed.
 - Compile your project, it may stuck for a while.
 
@@ -55,7 +55,7 @@ Test with Geforce RTX2000 series, RTX3000 series, Quadro A5000 GPU.
 - Unzip them to `./TestCase/`.
 - Run the **Test**.
 
-*The bias comparation is only supported on windows!*
+*The bias comparison is only supported on Windows!*
 
 ### Use GUI
 - Download [Cloud0.rar](https://1drv.ms/f/s!AjOfZ7yWFdfGiElO457WE054P8Pt?e=pc3YDk).
