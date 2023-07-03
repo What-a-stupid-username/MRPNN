@@ -7,6 +7,9 @@
 ## About
 MRPNN is a neural volumetric renderer that can render high-order volumetric scattering in real time. See our paper for more details.
 [SIG23: Deep Real-time Volumetric Rendering Using Multi-feature Fusion](https://sites.cs.ucsb.edu/~lingqi/publications/paper_mrpnn.pdf)
+[Project page](http://www.cad.zju.edu.cn/home/jin/sig20231/SigMRPNN2023.htm)
+[Supplementary doc](http://www.cad.zju.edu.cn/home/jin/sig20231/Supplementary.pdf)
+[Dataset for demo](https://1drv.ms/f/s!AjOfZ7yWFdfGiElO457WE054P8Pt?e=pc3YDk)
 
 ![Renderer](./pics/cloud.gif)
 
@@ -85,3 +88,11 @@ Camera cam(v);
 // and use camera to render to file
 cam.RenderToFile(...)
 ```
+
+## BibTex
+@Article{MRPNN:SIG:2023,
+author={Jinkai Hu, Chengzhong Yu, Hongli Liu, Lingqi Yan, Yiqian Wu, Xiaogang Jin},
+titile={Deep Real-time Volumetric Rendering Using Multi-feature Fusion},
+jornal={ACM Transactions on Graphics (Proc. SIGGRAPH 2023))},
+year={2023}
+}
