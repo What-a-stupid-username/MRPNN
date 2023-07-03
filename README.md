@@ -92,8 +92,13 @@ cam.RenderToFile(...)
 
 ## BibTex
 @Article{MRPNN:SIG:2023,
+
 author={Jinkai Hu, Chengzhong Yu, Hongli Liu, Lingqi Yan, Yiqian Wu, Xiaogang Jin},
+
 titile={Deep Real-time Volumetric Rendering Using Multi-feature Fusion},
+
 jornal={ACM Transactions on Graphics (Proc. SIGGRAPH 2023))},
+
 year={2023}
+
 }
