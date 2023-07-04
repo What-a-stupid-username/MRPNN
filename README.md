@@ -1,5 +1,6 @@
 
 
+
 # MRPNN - A neural volumetric renderer
 
 ![teaser](./pics/teaser.png)
@@ -23,15 +24,14 @@ MRPNN is a neural volumetric renderer that can render high-order volumetric scat
 	|11.0|Yes*|CUDA11.0 Only support sm_75|
 	|11.1|Yes|Recommended|
 	|11.2|Yes|Recommended|
-	|11.3|Yes*|**11.3 update 1** fix a compile error|
+	|11.3|Yes*|[11.3 update 1](https://developer.nvidia.com/cuda-11-3-1-download-archive) fix a compile error|
 	|11.4~11.7|Not Sure||
-	|11.8|No|Meet strange behavior|
+	|11.8|Yes*|After commit [324eae2241bfb51cae606f4e626d48ce1e0afdca](https://github.com/What-a-stupid-username/MRPNN/commit/324eae2241bfb51cae606f4e626d48ce1e0afdca)|
 - Glfw3 and GLEW if you want to compile with GUI
 - x64 Ubuntu or Windows
 - Nvidia GPU that supports sm_75 or sm_86
 
-**If the render result is strange and incorrect, try to use CUDA 11.0 and disable the `RTX30XX` option no matter what card you are using. If you know why this happened, please help us fix it!**
-Test with Geforce RTX2000 series, RTX3000 series, and Quadro A5000 GPU.
+Test with Geforce RTX2000 series, RTX3000 series, RTX4000 series, and Quadro A5000 GPU.
 
 ### To build on Linux:
 - Install CUDA 11.x.
@@ -91,15 +91,12 @@ cam.RenderToFile(...)
 ```
 
 ## BibTex
+```
 @inproceedings{ MRPNN:SIG:2023,
-
-  author       = {Jinkai Hu and Chengzhong Yu and Hongli Liu and Ling-qi Yan and Yiqian Wu and Xiaogang Jin},
-  
-  title        = {Deep Real-time Volumetric Rendering Using Multi-feature Fusion},
-  
-  booktitle    = {{SIGGRAPH} '23: Special Interest Group on Computer Graphics and Interactive Techniques Conference, Los Angeles CA, United States, August 6 - 10, 2023},
-  
-  publisher    = {{ACM}},
-  
-  year         = {2023}
+	author       = {Jinkai Hu and Chengzhong Yu and Hongli Liu and Ling-qi Yan and Yiqian Wu and Xiaogang Jin},
+	title        = {Deep Real-time Volumetric Rendering Using Multi-feature Fusion},
+	booktitle    = {{SIGGRAPH} '23: Special Interest Group on Computer Graphics and Interactive Techniques Conference, Los Angeles CA, United States, August 6 - 10, 2023},
+	publisher    = {{ACM}},
+	year         = {2023}
 }
+```
