@@ -720,31 +720,6 @@ inline float SampleClamp(float* data, int res, float3 uv) {
                 w.y),
             w.x);
 }
-inline float Sample_G(float* data, int res, int scaleindex, float3 uvw, float3 viewpos, float g) {
-    float3 CurrentViewDir = normalize(uvw - 0.5f - viewpos);
-    float3 MainX, MainY, MainZ;
-    MainX = CurrentViewDir;
-    if (abs(MainX.z) > sqrt(0.5))
-    {
-        MainY = normalize(cross(MainX, { 0, 1, 0 }));
-    }
-    else {
-        MainY = normalize(cross(MainX, { 0, 0, 1 }));
-    }
-    MainZ = cross(MainY, MainX);
-
-    float Density = 0.0f;
-    float Scale = float(1 << (scaleindex-1)) * (1.0 - exp(-Sample(data, res, uvw)));
-    //float Scale = (1.0 - exp(-Sample(data, res, uvw)/ float(1 << (scaleindex - 1))));
-    for (int i = 0; i < 64; i++)
-    {
-        float3 samplePos = uvw + SampleHenyeyGreenstein(i, MainX, MainY, MainZ, g) * Scale;//
-        Density += Sample(data, res, samplePos);
-    }
-    Density /= 64.0;
-    //Density *= Sample(data, res, uvw);
-    return Density;
-}
 
 //#define TR_MUL 3.1415926535f
 #define TR_MUL 1.0f
