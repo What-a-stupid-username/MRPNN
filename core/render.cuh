@@ -191,7 +191,7 @@ __device__ float4 CalculateRadiance(float3 ori, float3 dir, float3 lightDir, flo
         float3 rayDirection = dir;
         float3 current_scatter_rate = { 1,1,1 };
 
-        float path_phase = 1.0;
+        //float path_phase = 1.0;
         for (int scatter_num = 0; scatter_num < multiScatter; scatter_num++)
         {
             float3 nextPos, nextDir;

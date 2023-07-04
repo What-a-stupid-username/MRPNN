@@ -332,7 +332,7 @@ __device__ float3 RadiancePredict(curandState* seed, bool active, float3 pos, fl
             {
                 CurrentOffsetPos = pos + LightDir * CurrentOffsetInfo.Offset;
             }
-            X_Val[i] = log(1.0 + alpha * MipDensityDynamic(int(CurrentOffsetInfo.Layer), CurrentOffsetPos) / 64.0f);
+            X_Val[i] = log(1.0f + alpha * MipDensityDynamic(int(CurrentOffsetInfo.Layer), CurrentOffsetPos) / 64.0f);
 
             float3 MsDir;
             if (CurrentOffsetInfo.localindex == 0)
@@ -343,13 +343,13 @@ __device__ float3 RadiancePredict(curandState* seed, bool active, float3 pos, fl
             else
             {
                 MsDir = normalize(CurrentOffsetPos - pos);
-                float Radius = float(1 << int(CurrentOffsetInfo.Layer)) / 256.0;
+                float Radius = float(1 << int(CurrentOffsetInfo.Layer)) / 256.0f;
                 float Angle = atan(0.5f * Radius / CurrentOffsetInfo.Offset);
                 float cos = dot(XMain, MsDir);
                 float cos2 = dot(LXMain, MsDir);
-                float u = cos * 0.5 + 0.5;
-                float u2 = cos2 * 0.5 + 0.5;
-                float v = Angle / (3.1415926535 * 60.0 / 180.0);
+                float u = cos * 0.5f + 0.5f;
+                float u2 = cos2 * 0.5f + 0.5f;
+                float v = Angle / (3.1415926535f * 60.0f / 180.0f);
                 float HG0 = tex2D<float>(_HGLut, u, v);
                 float HG1 = tex2D<float>(_HGLut, u2, v);
                 X_Val_Hg[i] = log(HG0 * HG1 + 1.0f);
