@@ -91,14 +91,15 @@ cam.RenderToFile(...)
 ```
 
 ## BibTex
-@Article{MRPNN:SIG:2023,
+@inproceedings{ MRPNN:SIG:2023,
 
-author={Jinkai Hu, Chengzhong Yu, Hongli Liu, Lingqi Yan, Yiqian Wu, Xiaogang Jin},
-
-titile={Deep Real-time Volumetric Rendering Using Multi-feature Fusion},
-
-jornal={ACM Transactions on Graphics (Proc. SIGGRAPH 2023))},
-
-year={2023}
-
+  author       = {Jinkai Hu and Chengzhong Yu and Hongli Liu and Ling-qi Yan and Yiqian Wu and Xiaogang Jin},
+  
+  title        = {Deep Real-time Volumetric Rendering Using Multi-feature Fusion},
+  
+  booktitle    = {{SIGGRAPH} '23: Special Interest Group on Computer Graphics and Interactive Techniques Conference, Los Angeles CA, United States, August 6 - 10, 2023},
+  
+  publisher    = {{ACM}},
+  
+  year         = {2023}
 }
