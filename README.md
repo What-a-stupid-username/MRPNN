@@ -4,6 +4,8 @@
 # MRPNN - A neural volumetric renderer
 
 ![teaser](./pics/teaser.png)
+![fastforward](./pics/fastforward.gif)
+
 
 ## About
 MRPNN is a neural volumetric renderer that can render high-order volumetric scattering in real time. See our paper for more details.
