@@ -13,7 +13,7 @@ MRPNN is a neural volumetric renderer that can render high-order volumetric scat
 
 [Project page](http://www.cad.zju.edu.cn/home/jin/sig20231/SigMRPNN2023.htm) |
 [Supplementary doc](http://www.cad.zju.edu.cn/home/jin/sig20231/Supplementary.pdf) |
-[Dataset for demo](https://1drv.ms/f/s!AjOfZ7yWFdfGiElO457WE054P8Pt?e=pc3YDk)
+[Dataset for demo](https://1drv.ms/f/c/c6d71596bc679f33/QjOfZ7yWFdcggMZJBAAAAAAATuOe1hNOeD_D7Q)
 
 ![Renderer](./pics/cloud.gif)
 
