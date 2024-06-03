@@ -57,14 +57,14 @@ Test with Geforce RTX2000 series, RTX3000 series, RTX4000 series, and Quadro A50
 ## How to use
 
 ### Use test case
-- Download test data from [OneDrive](https://1drv.ms/f/s!AjOfZ7yWFdfGiElO457WE054P8Pt?e=pc3YDk).
+- Download test data from [OneDrive](https://1drv.ms/f/c/c6d71596bc679f33/QjOfZ7yWFdcggMZJBAAAAAAATuOe1hNOeD_D7Q).
 - Unzip them to `./TestCase/`.
 - Run the **Test**.
 
 *The bias comparison is only supported on Windows!*
 
 ### Use GUI
-- Download [Cloud0.rar](https://1drv.ms/f/s!AjOfZ7yWFdfGiElO457WE054P8Pt?e=pc3YDk).
+- Download [Cloud0.rar](https://1drv.ms/f/c/c6d71596bc679f33/QjOfZ7yWFdcggMZJBAAAAAAATuOe1hNOeD_D7Q).
 - Unzip it to `./TestCase/`.
 - Build project with **GUI** option on.
 - Run the **VolumeRender**.
