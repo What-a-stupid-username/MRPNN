@@ -179,7 +179,7 @@ __device__ __host__ const float3 Roberts2(const int n) {
 
 __device__ __host__ const float3 UniformSampleHemisphere(const float x, const float y) {
     float Phi = float(2 * 3.14159265359 * x);
-    float CosTheta = sqrt(float(y));
+    float CosTheta = y;
     float SinTheta = sqrt(1 - CosTheta * CosTheta);
 
     float3 H = { SinTheta * cos(Phi), SinTheta * sin(Phi), CosTheta };
